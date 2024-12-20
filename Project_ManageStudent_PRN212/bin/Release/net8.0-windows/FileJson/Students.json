@@ -1,0 +1,29 @@
+[
+  {
+    "Id": "HE173322",
+    "StudentName": "Nguyen Van A",
+    "Gender": true,
+    "Email": "a.doe@example.com",
+    "BirthDate": "2000-01-01",
+    "Account": {
+      "UserName": "act",
+      "Password": "123",
+      "Role": 2
+    }
+  }
+,
+  {
+    "Id": "HE172222",
+    "StudentName": "Nguyen Thi C",
+    "Gender": false,
+    "Email": "c@example.com",
+    "BirthDate": "2000-01-01",
+    "Account": {
+      "UserName": "a",
+      "Password": "123",
+      "Role": 2
+    }
+  }
+
+]
+

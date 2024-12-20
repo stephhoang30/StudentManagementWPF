@@ -1,0 +1,147 @@
+﻿<Window x:Class="Project_ManageStudent_PRN212.Admin.ManageRooms"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_ManageStudent_PRN212.Admin"
+        mc:Ignorable="d"
+        Title="ManageRooms" Height="450" Width="1000"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Background" Value="#0078D7"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="5" 
+                                BorderBrush="Gray" 
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#0078D7"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                         BorderThickness="{TemplateBinding BorderThickness}" 
+                         Background="{TemplateBinding Background}" 
+                         CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost" 
+                                   Margin="0"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style TargetType="GridViewColumnHeader">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#0078D7"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Border Background="#0078D7" DockPanel.Dock="Top" Height="50">
+            <DockPanel>
+                <Button Content="Back" Click="btnBackClick" HorizontalAlignment="Left"  VerticalAlignment="Center" />
+                <TextBlock Text="Manage Room" Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </DockPanel>
+        </Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="650" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ListView x:Name="lvRooms" Grid.Column="0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Department Id" Width="150" DisplayMemberBinding="{Binding Department.DepartmentId}"/>
+                        <GridViewColumn Header="Department Name" Width="150" DisplayMemberBinding="{Binding Department.DepartmentName}"/>
+                        <GridViewColumn Header="Room Id" Width="130" DisplayMemberBinding="{Binding RoomId}"/>
+                        <GridViewColumn Header="Room Name" Width="170" DisplayMemberBinding="{Binding RoomName}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <StackPanel Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Margin="10 0 0 0" Grid.Row="0">
+                        <Label Width="150" Height="30" Content="Department Name"/>
+                        <ComboBox Name="cbbdepartment" Width="150" Height="30" HorizontalAlignment="Left" 
+                              DisplayMemberPath="DepartmentName" SelectedValuePath="DepartmentId"
+                              SelectedValue="{Binding ElementName=lvRooms, Path=SelectedItem.Department.DepartmentId, Mode=OneWay}"/>
+                        <Label Width="150" Height="30" Content="Room ID"/>
+                        <TextBox Name="txtRoomId" Width="200" Height="30" HorizontalAlignment="Left"
+                  Text="{Binding ElementName=lvRooms, Path=SelectedItem.RoomId, Mode=OneWay}" IsReadOnly="True"/>
+                        <Label Width="150" Height="30" Content="Room Name" />
+                        <TextBox Name="txtRoomName" Width="200" Height="30" HorizontalAlignment="Left"
+                 Text="{Binding ElementName=lvRooms, Path=SelectedItem.RoomName, Mode=OneWay}"  />
+                    </StackPanel>
+                    <StackPanel Margin="10 10 0 0" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Width="70" Height="30" Content="Insert" Click="btnInsertClick" Margin="20" />
+                        <Button Width="70" Height="30" Content="Update" Click="btnUpdateClick" Margin="20" />
+                        <Button Width="70" Height="30" Content="Delete" Click="btnDeleteClick" Margin="20"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="10 0 0 0">
+                        <TextBox x:Name="txtSearch" Width="150" Height="30" TextChanged="SearchRoom" HorizontalAlignment="Left"/>
+                        <Label Width="100" Height="30" Content="Search" Margin="20 0 0 0" />
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

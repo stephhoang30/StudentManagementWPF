@@ -1,0 +1,166 @@
+﻿<Window x:Class="Project_ManageStudent_PRN212.Admin.ManageAccountTeacher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_ManageStudent_PRN212.Admin"
+        mc:Ignorable="d"
+        Title="Manage Account Teacher" Height="700" Width="1400"
+        Loaded="window_load">
+    <Window.Resources>
+        <local:ConvertGender x:Key="ConverGender"/>
+        <local:ReserveGender x:Key="ReserveGender"/>
+        
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Background" Value="#0078D7"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="5" 
+                                BorderBrush="Gray" 
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#0078D7"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                         BorderThickness="{TemplateBinding BorderThickness}" 
+                         Background="{TemplateBinding Background}" 
+                         CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost" 
+                                   Margin="0"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style TargetType="GridViewColumnHeader">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#0078D7"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Border Background="#0078D7" DockPanel.Dock="Top" Height="50">
+            <DockPanel>
+                <Button Content="Back" Click="btnBackClick" HorizontalAlignment="Left"  VerticalAlignment="Center" />
+                <TextBlock Text="Manage Account Teacher" Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </DockPanel>
+        </Border>
+
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="900"  />
+            <ColumnDefinition Width="*"  />
+        </Grid.ColumnDefinitions>
+            <ListView x:Name="lvTeachers" Grid.Column="0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Teacher ID" Width="100" DisplayMemberBinding="{Binding Path=TeacherID}" />
+                        <GridViewColumn Header="Teacher Name" Width="150" DisplayMemberBinding="{Binding Path=TeacherName}" />
+                        <GridViewColumn Header="Gender"  Width="70" DisplayMemberBinding="{Binding Path=Gender ,Converter={StaticResource ConverGender}}" />
+                        <GridViewColumn Header="Email"  Width="180" DisplayMemberBinding="{Binding Path=Email}" />
+                        <GridViewColumn Header="BrithDate"  Width="100" DisplayMemberBinding="{Binding Path=BirthDate}"/>
+                        <GridViewColumn Header="User Name"  Width="100" DisplayMemberBinding="{Binding Path=account.username}" />
+                        <GridViewColumn Header="Password"  Width="100" DisplayMemberBinding="{Binding Path=account.password}" />
+                        <GridViewColumn Header="Role"  Width="50" DisplayMemberBinding="{Binding Path=account.Role}" />
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <StackPanel Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="10 0 0 0" Grid.Row="1" Grid.Column="0">
+                        <Label Content="Teacher ID"/>
+                        <TextBox Name="txtTeacherID" Text="{Binding ElementName=lvTeachers, Path=SelectedItem.TeacherID, Mode=OneWay}" />
+                        <Label Content="Teacher Name"/>
+                        <TextBox Name="txtTeacherName" Text="{Binding ElementName=lvTeachers, Path=SelectedItem.TeacherName, Mode=OneWay}" />
+                        <StackPanel Margin="15 20" Height="30" Orientation="Horizontal" >
+                            <RadioButton Name="rbMale" GroupName="gender" Content="Male"
+                            IsChecked="{Binding Path=Gender, Mode=OneWay}"
+                            DataContext="{Binding ElementName=lvTeachers, Path=SelectedItem}"/>
+                            <RadioButton Name="rbFemale" GroupName="gender"  Content="Female" Margin="10 0 0 0"
+                            IsChecked="{Binding Path=Gender, Mode=OneWay, Converter={StaticResource ReserveGender}}"           
+                            DataContext="{Binding ElementName=lvTeachers, Path=SelectedItem}"/>
+                        </StackPanel>
+                        <Label Content="Email"/>
+                        <TextBox Name="txtEmail" Text="{Binding ElementName=lvTeachers, Path=SelectedItem.Email, Mode=OneWay}"/>
+                    </StackPanel>
+                    <StackPanel Margin="10 0 0 0" Grid.Row="1" Grid.Column="1">
+                        <Label Content="BirthDate"/>
+                        <DatePicker Width="150" Height="30" Name="txtBirthDate" Text="{Binding ElementName=lvTeachers, Path=SelectedItem.BirthDate, Mode=OneWay}"/>
+                        <Label Content="User Name"/>
+                        <TextBox Name="txtUserName" Text="{Binding ElementName=lvTeachers, Path=SelectedItem.account.username, Mode=OneWay}"/>
+                        <Label Content="Password"/>
+                        <TextBox Name="txtPassword" Text="{Binding ElementName=lvTeachers, Path=SelectedItem.account.password, Mode=OneWay}"/>
+                    </StackPanel>
+                    <StackPanel Margin="10 10 0 0" Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Content="Insert" Click="btnInsertClick" />
+                        <Button Content="Update" Click="btnUpdateClick" />
+                        <Button Content="Delete" Click="btnDeleteClick"/>
+                    </StackPanel>
+                    <StackPanel Margin="10 10 0 0" Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Content="SaveJson" Click="SaveJson_Click" />
+                        <Button Content="SaveXML" Click="SaveXML_Click"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="10 0 0 0">
+                        <TextBox x:Name="txtSearch" Width="150" Height="30" TextChanged="txtSearchInfoTeacher" HorizontalAlignment="Left"/>
+                        <Label Content="Search" Margin="20 0 0 0" />
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

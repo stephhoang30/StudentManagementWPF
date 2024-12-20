@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\login\\loginscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\login\\loginscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\login\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\login\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3DACB2F-BECC-41AB-8FD3-71E6033D3978}|AddnewDB\\AddnewDB.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\addnewdb\\models\\projectprn212context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3DACB2F-BECC-41AB-8FD3-71E6033D3978}|AddnewDB\\AddnewDB.csproj|solutionrelative:addnewdb\\models\\projectprn212context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\students\\homescreenstudent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\students\\homescreenstudent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\admin\\homescreenadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\admin\\homescreenadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\admin\\homescreenadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\admin\\homescreenadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\students\\homescreenstudent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\students\\homescreenstudent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\admin\\mangecourse.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\admin\\mangecourse.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\admin\\mangecourse.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\admin\\mangecourse.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\teacher\\homescreenteacher.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\teacher\\homescreenteacher.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|d:\\ky5\\prn212\\code\\project_managestudent_prn212\\project_managestudent_prn212\\admin\\manageclass.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}|Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212.csproj|solutionrelative:project_managestudent_prn212\\admin\\manageclass.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 193,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginScreen.xaml",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-06T03:41:40.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectPrn212Context.cs",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\AddnewDB\\Models\\ProjectPrn212Context.cs",
+              "RelativeDocumentMoniker": "AddnewDB\\Models\\ProjectPrn212Context.cs",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\AddnewDB\\Models\\ProjectPrn212Context.cs",
+              "RelativeToolTip": "AddnewDB\\Models\\ProjectPrn212Context.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowCkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T04:33:57.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginScreen.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml.cs",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml.cs",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml.cs",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Login\\LoginScreen.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwC8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:36:16.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MangeCourse.xaml",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-17T04:23:08.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MangeCourse.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml.cs",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml.cs",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml.cs",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Admin\\MangeCourse.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:23:07.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeScreenTeacher.xaml",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Teacher\\HomeScreenTeacher.xaml",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Teacher\\HomeScreenTeacher.xaml",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Teacher\\HomeScreenTeacher.xaml",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Teacher\\HomeScreenTeacher.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-17T04:16:59.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeScreenStudent.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml.cs",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml.cs",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml.cs",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwC0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:15:13.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeScreenStudent.xaml",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Students\\HomeScreenStudent.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-17T04:13:45.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeScreenAdmin.xaml",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-17T04:06:13.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeScreenAdmin.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml.cs",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml.cs",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Admin\\HomeScreenAdmin.xaml.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAWwEkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:06:12.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManageClass.xaml.cs",
+              "DocumentMoniker": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\ManageClass.xaml.cs",
+              "RelativeDocumentMoniker": "Project_ManageStudent_PRN212\\Admin\\ManageClass.xaml.cs",
+              "ToolTip": "D:\\Ky5\\PRN212\\code\\Project_ManageStudent_PRN212\\Project_ManageStudent_PRN212\\Admin\\ManageClass.xaml.cs",
+              "RelativeToolTip": "Project_ManageStudent_PRN212\\Admin\\ManageClass.xaml.cs",
+              "ViewState": "AQIAAOMAAAAAAAAAAAAkwO4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T03:52:33.12Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

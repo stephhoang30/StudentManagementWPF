@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Admin\HomeScreenAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\ManageAccountStudent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\ManageAccountTeacher.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\ManageClass.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\ManageRooms.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\ManageStudentInClass.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\MangeCourse.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login\LoginScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Students\HomeScreenStudent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\HomeScreenTeacher.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Admin\HomeScreenAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\ManageAccountStudent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\ManageAccountTeacher.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\ManageClass.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\ManageRooms.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\ManageStudentInClass.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\MangeCourse.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\LoginScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Students\HomeScreenStudent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\HomeScreenTeacher.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

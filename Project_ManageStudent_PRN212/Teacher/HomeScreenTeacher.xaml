@@ -1,0 +1,141 @@
+﻿<Window x:Class="Project_ManageStudent_PRN212.Teacher.HomeScreenTeacher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_ManageStudent_PRN212.Teacher"
+        mc:Ignorable="d"
+        Title="HomeScreenTeacher" Height="450" Width="1400"
+        Loaded="Window_Load">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Background" Value="#0078D7"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="5" 
+                                BorderBrush="Gray" 
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#0078D7"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}" 
+                                CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost" 
+                                          Margin="0"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style TargetType="GridViewColumnHeader">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#0078D7"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel>
+        <Border Background="#0078D7" DockPanel.Dock="Top" Height="50">
+            <DockPanel>
+                <Button Content="Log out" Click="btnBackClick" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                <TextBlock Text="Home Screen Teacher" Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </DockPanel>
+        </Border>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView Name="lvTeacherClass" SelectionChanged="GetListStudent">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Class ID" Width="80" DisplayMemberBinding="{Binding ClassID}"/>
+                        <GridViewColumn Header="Class Name" Width="100" DisplayMemberBinding="{Binding ClassName}"/>
+                        <GridViewColumn Header="Course ID" Width="100" DisplayMemberBinding="{Binding Course.CourseID}"/>
+                        <GridViewColumn Header="Course Name" Width="150" DisplayMemberBinding="{Binding Course.CourseName}"/>
+                        <GridViewColumn Header="Room ID" Width="80" DisplayMemberBinding="{Binding Room.RoomID}"/>
+                        <GridViewColumn Header="Room Name" Width="140" DisplayMemberBinding="{Binding Room.RoomName}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <StackPanel Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10 0 0 0">
+                        <Label Content="Class ID" Width="150" Height="30" HorizontalAlignment="Left" />
+                        <Label Content="Search Class" Width="150" Height="30" HorizontalAlignment="Left" Margin="100 0 0 0" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10 0 0 0">
+                        <ComboBox Name="cbbClassId" Width="150" Height="30" HorizontalAlignment="Left" 
+                                  DisplayMemberPath="ClassName" SelectedValuePath="ClassID"
+                                  SelectedValue="{Binding ElementName=lvTeacherClass, Path=SelectedItem.ClassID, Mode=OneWay}" SelectionChanged="searchClass"/>
+                        <TextBox Margin="100 0 0 0" Width="150" Height="30" Name="txtSearch" TextChanged="txtSearchClass"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Margin="0 30 0 0">
+                        <ListView x:Name="lvStudent">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Student ID" Width="100" DisplayMemberBinding="{Binding Student.StudentID}" />
+                                    <GridViewColumn Header="Student Name" Width="170" DisplayMemberBinding="{Binding Student.StudentName}" />
+                                    <GridViewColumn Header="Gender" Width="80" DisplayMemberBinding="{Binding Student.Gender}" />
+                                    <GridViewColumn Header="Email" Width="200" DisplayMemberBinding="{Binding Student.Email}" />
+                                    <GridViewColumn Header="Birth Date" Width="100" DisplayMemberBinding="{Binding Student.BirhthDate}" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

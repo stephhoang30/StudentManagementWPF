@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Students>
+	<Student>
+		<Id>HE172232</Id>
+		<StudentName>Do Truong Giang</StudentName>
+		<Gender>1</Gender>
+		<Email>Giang@gmail.com</Email>
+		<BirthDate>2002/01/01</BirthDate>
+		<Account>
+			<UserName>GiangDT</UserName>
+			<Password>123</Password>
+			<Role>2</Role>
+		</Account>
+	</Student>
+	<Student>
+		<Id>HE17223232</Id>
+		<StudentName>Dang Tieu Binh</StudentName>
+		<Gender>1</Gender>
+		<Email>Binh@gmail.com</Email>
+		<BirthDate>2003/01/01</BirthDate>
+		<Account>
+			<UserName>BinhDT</UserName>
+			<Password>123</Password>
+			<Role>2</Role>
+		</Account>
+	</Student>
+</Students>

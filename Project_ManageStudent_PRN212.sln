@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project_ManageStudent_PRN212", "Project_ManageStudent_PRN212\Project_ManageStudent_PRN212.csproj", "{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddnewDB", "AddnewDB\AddnewDB.csproj", "{A3DACB2F-BECC-41AB-8FD3-71E6033D3978}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D427CE6-68D4-4E6E-BB68-BDE6540A0E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3DACB2F-BECC-41AB-8FD3-71E6033D3978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DACB2F-BECC-41AB-8FD3-71E6033D3978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3DACB2F-BECC-41AB-8FD3-71E6033D3978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DACB2F-BECC-41AB-8FD3-71E6033D3978}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F865EAFB-AD2D-4596-A305-81DC7C0EE061}
+	EndGlobalSection
+EndGlobal
